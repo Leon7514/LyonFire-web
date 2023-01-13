@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagina di registrazione</title>
+  <style>
+    /* Stili per il form di registrazione */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      margin: 100px auto 0;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 5px;
+    }
+
+    /* Stili per il campo di input */
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      font-size: 16px;
+    }
+
+    /* Stili per il pulsante di registrazione */
+    button[type="submit"] {
+      width: 100%;
+      padding: 14px 20px;
+      margin: 8px 0;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* Stili per il pulsante di registrazione al passaggio del mouse */
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form action="/register">
+    <input type="text" name="name" placeholder="Nome">
+    <input type="email" name="email" placeholder="Indirizzo email">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Registrati</button>
+  </form>
+</body>
+</html>

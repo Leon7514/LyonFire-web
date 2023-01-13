@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cerca con il nostro motore</title>
+  <style>
+    /* Stili per il form di ricerca */
+    form {
+      display: flex;
+      align-items: center;
+      width: 500px;
+      margin: 100px auto 0;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 5px;
+    }
+
+    /* Stili per il campo di input */
+    input[type="text"] {
+      flex: 1;
+      padding: 12px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f1f1f1;
+      font-size: 16px;
+    }
+
+    /* Stili per il pulsante di invio */
+    button[type="submit"] {
+      padding: 12px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* Stili per il pulsante di invio al passaggio del mouse */
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+  <img src="img.png" alt="Immagine di esempio">
+  <form action="/search">
+    <input type="text" name="query" placeholder="Inserisci la tua ricerca">
+    <button type="submit">Cerca</button>
+  </form>
+  </div>
+  <div class="login-link">
+    <a href="login.html">Accedi</a>
+    <a href="register.html">Registrati</a>
+  </div>
+</body>
+</html>
